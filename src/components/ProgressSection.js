@@ -20,7 +20,7 @@ function ProgressSection({progressSection, itemChange}) {
         </div>
         <div className="progress-section-name">
           <strong>
-            {progressSection.isCompleted ? <AiFillLock color='#466eb4' /> : <AiFillUnlock />}
+            {progressSection.isMutable ? <AiFillUnlock /> : <AiFillLock /> }
             {progressSection.name}
             {progressSection.isCompleted ? <AiOutlineCheck color='#466eb4' /> : ''}
           </strong>
